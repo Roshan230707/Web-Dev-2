@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To-do-list</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0 50px;
+        background-color: #e5e5e5;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .main {
+        background-color: #fff;
+        width: 300px;
+        height: 500px;
+        border: 5px solid darkblue;
+        border-radius: 8px;
+        padding: 15px;
+        overflow-y: scroll;
+      }
+      .title {
+        font-size: 30px;
+      }
+      .tasks-title {
+        text-align: center;
+      }
+      .delete-btn {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        margin-left: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h3 class="title">To-Do-List</h3>
+      <div class="input-wrapper">
+        <input id="user-input" "text" />
+        <button onclick="addTask()">Save</button>
+      </div>
+
+      <div class="tasks-wrapper">
+        <h3 class="tasks-title">Tasks</h3>
+        <div id="tasks">no tasks found</div>
+        <div id="no-tasks">no tasks found</div>
+      
+    </div>
+
+    <script src="example.js"></script>
+  </body>
+</html>
